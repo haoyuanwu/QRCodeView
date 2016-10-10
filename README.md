@@ -1,0 +1,2 @@
+# QRCodeView
+Qr code scanning
