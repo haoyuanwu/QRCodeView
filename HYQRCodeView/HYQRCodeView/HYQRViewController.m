@@ -8,6 +8,7 @@
 
 #import "HYQRViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "QRView.h"
 
 @interface HYQRViewController () <UITabBarDelegate,AVCaptureMetadataOutputObjectsDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
@@ -126,14 +127,12 @@
     [self.previewLayer setVideoGravity:AVLayerVideoGravityResizeAspectFill];
     self.previewLayer.frame = self.view.bounds;
     
+    QRView *qrView = [[QRView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview:qrView];
+    
     // 7.添加容器图层
     [self.view.layer addSublayer:self.containerLayer];
-    CALayer *kuangLayer = [CALayer layer];
-    kuangLayer.backgroundColor = [UIColor clearColor].CGColor;
-    kuangLayer.borderColor = [UIColor greenColor].CGColor;
-    kuangLayer.borderWidth = 1;
-    kuangLayer.frame = CGRectMake(self.view.frame.size.width/2 - (self.view.frame.size.width*2/3)/2, self.view.frame.size.height/2 - 50, self.view.frame.size.width*2/3, 100);
-    [self.view.layer addSublayer:kuangLayer];
+    
     self.containerLayer.frame = self.view.bounds;
     
     // 8.开始扫描

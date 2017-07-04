@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		501B21401F0A2D2800FBCE0C /* QRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 501B213F1F0A2D2800FBCE0C /* QRView.m */; };
 		5075E7321DAB2769006D570C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5075E7311DAB2769006D570C /* main.m */; };
 		5075E7351DAB2769006D570C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5075E7341DAB2769006D570C /* AppDelegate.m */; };
 		5075E7381DAB2769006D570C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5075E7371DAB2769006D570C /* ViewController.m */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		501B213E1F0A2D2800FBCE0C /* QRView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRView.h; sourceTree = "<group>"; };
+		501B213F1F0A2D2800FBCE0C /* QRView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRView.m; sourceTree = "<group>"; };
 		5075E72D1DAB2769006D570C /* HYQRCodeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYQRCodeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5075E7311DAB2769006D570C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5075E7331DAB2769006D570C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 				5075E7371DAB2769006D570C /* ViewController.m */,
 				5075E74A1DAB27E3006D570C /* HYQRViewController.h */,
 				5075E74B1DAB27E3006D570C /* HYQRViewController.m */,
+				501B213E1F0A2D2800FBCE0C /* QRView.h */,
+				501B213F1F0A2D2800FBCE0C /* QRView.m */,
 				5075E7391DAB2769006D570C /* Main.storyboard */,
 				5075E73F1DAB2769006D570C /* Assets.xcassets */,
 				5075E7411DAB2769006D570C /* LaunchScreen.storyboard */,
@@ -130,7 +135,7 @@
 				TargetAttributes = {
 					5075E72C1DAB2769006D570C = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = Z6S5TUM7DB;
+						DevelopmentTeam = 266M6WGGZY;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -176,6 +181,7 @@
 				5075E7351DAB2769006D570C /* AppDelegate.m in Sources */,
 				5075E7321DAB2769006D570C /* main.m in Sources */,
 				5075E73E1DAB2769006D570C /* HYQRCodeView.xcdatamodeld in Sources */,
+				501B21401F0A2D2800FBCE0C /* QRView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +299,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Z6S5TUM7DB;
+				DEVELOPMENT_TEAM = 266M6WGGZY;
 				INFOPLIST_FILE = HYQRCodeView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HY..HYQRCodeView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -305,8 +312,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Z6S5TUM7DB;
+				DEVELOPMENT_TEAM = 266M6WGGZY;
 				INFOPLIST_FILE = HYQRCodeView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HY..HYQRCodeView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
