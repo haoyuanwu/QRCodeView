@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface QRView : UIView
-
+@property (nonatomic,strong) void(^block)(UIButton *sender);
 @end

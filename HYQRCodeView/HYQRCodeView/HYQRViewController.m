@@ -128,6 +128,10 @@
     self.previewLayer.frame = self.view.bounds;
     
     QRView *qrView = [[QRView alloc] initWithFrame:self.view.frame];
+    __weak typeof (self) wself = self;
+    qrView.block = ^(UIButton *sender) {
+        [wself turnOnLight:sender.isSelected];
+    };
     [self.view addSubview:qrView];
     
     // 7.添加容器图层
@@ -156,9 +160,23 @@
             }
         }else if([metadataObject isKindOfClass:[AVMetadataFaceObject class]]){
             NSLog(@"人脸");
+            [self.session startRunning];
         }else{
             NSLog(@"%s",object_getClassName(metadataObject));
         }
+    }
+}
+
+- (void)turnOnLight:(BOOL)on {
+    self.device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    if ([_device hasTorch]) {
+        [_device lockForConfiguration:nil];
+        if (on) {
+            [_device setTorchMode:AVCaptureTorchModeOn];
+        } else {
+            [_device setTorchMode: AVCaptureTorchModeOff];
+        }
+        [_device unlockForConfiguration];
     }
 }
 

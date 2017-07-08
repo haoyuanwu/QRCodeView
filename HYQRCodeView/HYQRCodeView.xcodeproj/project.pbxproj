@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		501B21401F0A2D2800FBCE0C /* QRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 501B213F1F0A2D2800FBCE0C /* QRView.m */; };
+		501B21461F0C910B00FBCE0C /* Light_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 501B21451F0C910B00FBCE0C /* Light_white.png */; };
+		501B21481F0C914300FBCE0C /* Light_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 501B21471F0C914300FBCE0C /* Light_black.png */; };
 		5075E7321DAB2769006D570C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5075E7311DAB2769006D570C /* main.m */; };
 		5075E7351DAB2769006D570C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5075E7341DAB2769006D570C /* AppDelegate.m */; };
 		5075E7381DAB2769006D570C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5075E7371DAB2769006D570C /* ViewController.m */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		501B213E1F0A2D2800FBCE0C /* QRView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRView.h; sourceTree = "<group>"; };
 		501B213F1F0A2D2800FBCE0C /* QRView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRView.m; sourceTree = "<group>"; };
+		501B21451F0C910B00FBCE0C /* Light_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light_white.png; sourceTree = "<group>"; };
+		501B21471F0C914300FBCE0C /* Light_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light_black.png; sourceTree = "<group>"; };
 		5075E72D1DAB2769006D570C /* HYQRCodeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYQRCodeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5075E7311DAB2769006D570C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5075E7331DAB2769006D570C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 		5075E72F1DAB2769006D570C /* HYQRCodeView */ = {
 			isa = PBXGroup;
 			children = (
+				501B21471F0C914300FBCE0C /* Light_black.png */,
+				501B21451F0C910B00FBCE0C /* Light_white.png */,
 				5075E7331DAB2769006D570C /* AppDelegate.h */,
 				5075E7341DAB2769006D570C /* AppDelegate.m */,
 				5075E7361DAB2769006D570C /* ViewController.h */,
@@ -164,7 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5075E7431DAB2769006D570C /* LaunchScreen.storyboard in Resources */,
+				501B21481F0C914300FBCE0C /* Light_black.png in Resources */,
 				5075E7401DAB2769006D570C /* Assets.xcassets in Resources */,
+				501B21461F0C910B00FBCE0C /* Light_white.png in Resources */,
 				5075E73B1DAB2769006D570C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
